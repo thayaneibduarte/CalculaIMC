@@ -17,30 +17,34 @@ public class Principal {
 
         for (int i = 0; i < listapessoas.length; i++) {
             listapessoas[i] = new Pessoa();
+            dados.nextLine();
 
             System.out.println("Seja Bem-Vindo ao programa de cálculo de IMC! Para iniciarmos, insira a seguir os dados necessários:");
 
-            System.out.println("Insira o Nome: ");
-            listapessoas[i].nome = dados.next();
-            System.out.println("Insira o Telefone: ");
-            listapessoas[i].telefone = dados.next();
-            System.out.println("Insira a Cidade onde mora:");
-            listapessoas[i].cidade = dados.next();
-            System.out.println("Insira o Estado onde reside: ");
-            listapessoas[i].estado = dados.next();
-            System.out.println("Insira o Endereço: ");
-            listapessoas[i].endereco = dados.next();
-            System.out.println("Insira o CEP de sua residência");
+            System.out.printf("Insira o Nome: ");
+            listapessoas[i].nome = dados.nextLine();
+            System.out.printf("Insira o Telefone: ");
+            listapessoas[i].telefone = dados.nextLine();
+            System.out.printf("Insira a Cidade onde mora:");
+            listapessoas[i].cidade = dados.nextLine();
+            System.out.printf("Insira o Estado onde reside: ");
+            listapessoas[i].estado = dados.nextLine();
+            System.out.printf("Insira o Endereço: ");
+            listapessoas[i].endereco = dados.nextLine();
+            System.out.printf("Insira o CEP de sua residência");
             listapessoas[i].cep = dados.nextInt();
-            System.out.println("Insira a sua Idade:");
+            dados.nextLine();
+            System.out.printf("Insira a sua Idade:");
             listapessoas[i].idade = dados.nextInt();
-            System.out.println("Insira o RG:");
+            dados.nextLine();
+            System.out.printf("Insira o RG:");
             listapessoas[i].rg = dados.nextInt();
-            System.out.println("Insira seu CPF:");
-            listapessoas[i].cpf = dados.next();
-            System.out.println("Por fim, para cálculo de seu IMC, insira a sua altura:");
+            dados.nextLine();
+            System.out.printf("Insira seu CPF:");
+            listapessoas[i].cpf = dados.nextLine();
+            System.out.printf("Por fim, para cálculo de seu IMC, insira a sua altura:");
             listapessoas[i].altura = dados.nextDouble();
-            System.out.println("Para finalizar, insira seu peso:");
+            System.out.printf("Para finalizar, insira seu peso:");
             listapessoas[i].peso = dados.nextDouble();
         }
 
