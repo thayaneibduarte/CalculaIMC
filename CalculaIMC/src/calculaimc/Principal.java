@@ -31,7 +31,7 @@ public class Principal {
             listapessoas[i].estado = dados.nextLine();
             System.out.printf("Insira o Endereço: ");
             listapessoas[i].endereco = dados.nextLine();
-            System.out.printf("Insira o CEP de sua residência");
+            System.out.printf("Insira o CEP de sua residência: ");
             listapessoas[i].cep = dados.nextInt();
             dados.nextLine();
             System.out.printf("Insira a sua Idade:");
